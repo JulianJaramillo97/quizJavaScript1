@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+}
+
+body .nav{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    display: flex;
+    text-align: center;
+    width: 700px;
+    z-index: 1;
+}
+
+h1{
+    margin-right: 20px;
+}
+
+.contenedor_texto_animacion{
+    display: flex;
+}
+
+.barra_escritura{
+    width: 3px;
+    height: 70px;
+    margin-left: 5px;
+    background-color: #181818;
+    transform: rotateZ(10deg);
+    animation: barra-animacion 1s ease infinite;
+}
+
+/*barra de escritura animación*/
+@keyframes barra-animacion{
+    50%{
+        height: 20px;
+    }
+}
